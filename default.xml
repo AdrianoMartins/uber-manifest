@@ -2,15 +2,19 @@
 <manifest>
   <remote  name="uu"
            fetch="https://github.com/UBERTC/" />
-  <default revision="master"
+
+    <remote  name="AdrianoMartins"
+    fetch="https://github.com/AdrianoMartins/" />
+
+    <default revision="master"
            remote="uu"
            sync-j="4"
            sync-c="true"
            sync-f="true" />
 
-  <project path="manifest" name="uber-manifest" />
+  <project path="manifest" name="uber-manifest" remote="AdrianoMartins" />
   <project path="binutils/binutils-uber" name="binutils" revision="2.25" />
-  <project path="build" name="uber-build" />
+  <project path="build" name="uber-build" remote="AdrianoMartins"/>
   <project path="cloog/cloog-uber" name="cloog" revision="uber" />
   <project path="cloog/cloog-uber/isl" name="isl" revision="uber" />
   <project path="cloog/cloog-uber/osl" name="osl" revision="uber" />
@@ -19,6 +23,6 @@
   <project path="gmp/gmp-uber" name="gmp" revision="uber" />
   <project path="mpc/mpc-uber" name="mpc" revision="uber" />
   <project path="mpfr/mpfr-uber" name="mpfr" revision="uber" />
-  <project path="scripts" name="uber-scripts" />
+  <project path="scripts" name="uber-scripts" remote="AdrianoMartins"/>
   <project path="sysroot" name="sysroot" revision="gcc-4.9" />
 </manifest>

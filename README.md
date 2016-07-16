@@ -1,11 +1,12 @@
 UBER TOOLCHAIN MANIFEST
+MOD BY ADRIANO MARTINS
 ===========
 
 What is UBERTC?  UBERTC is a toolchain closely based on AOSP but with latest merges to toolchain components from gnu.org. Patches will be used from linaro or aosp as seen fit to improve performance but build folder will always stay as close to aosp as possible.
 
 To build all you have to do is sync sources:
 
-    repo init -u https://github.com/UBERTC/uber-manifest.git -b master 
+    repo init -u https://github.com/AdrianoMartins/uber-manifest.git -b master 
 
 followed by
 
